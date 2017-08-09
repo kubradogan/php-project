@@ -17,13 +17,11 @@
               <div class="box">
                 <div class="box-header">
 				 <h3 class="box-title">
-				 
-				 <a href="<?=base_url() ?>admin/kullanicilar/ekle" class="btn btn-block btn-success">Yeni Kullanıcı Ekle </a>
-				 <a href="<?=base_url() ?>admin/kullanicilar/sil" class="btn btn-block btn-danger">Kullanıcı Sil</a>
-                 <a href="<?=base_url() ?>admin/kullanicilar/duzenle" class="btn btn-block btn-primary">Düzenle</a>
-
-
-
+				<tr> 
+          <a href="<?=base_url() ?>admin/kullanicilar/ekle" class="btn btn-block btn-success">Yeni Kullanıcı Ekle </a>
+          <!-- <a href="<?=base_url() ?>admin/kullanicilar/sil" class="btn btn-block btn-danger">Kullanıcı Sil</a>
+          <a href="<?=base_url() ?>admin/kullanicilar/duzenle" class="btn btn-block btn-primary">Düzenle</a> -->
+        </tr>
                  </h3>
 				 
                
@@ -48,15 +46,15 @@
 					    {
 					?>
                       <tr>
-			
-					  
-					    <td><?=$rs->Id?></td>
+					              <td><?=$rs->Id?></td>
                         <td><?=$rs->adsoy?></td>
                         <td><?=$rs->email?></td>
                         <td><?=$rs->sifre?></td>
-						<td><?=$rs->yetki?></td>
-						<td><?=$rs->durum?></td>
-						<td><?=$rs->tarih?></td>
+                        <td><?=$rs->yetki?></td>
+                        <td><?=$rs->durum?></td>
+                        <td><?=$rs->tarih?></td>
+                        <td><a href="<?=base_url() ?>admin/kullanicilar/duzenle/<?=$rs->Id?>" class="btn btn-block btn-primary btn-xs">Düzenle</a></td>
+                        <td><a href="<?=base_url() ?>admin/kullanicilar/sil/<?=$rs->Id?>" class="btn btn-block btn-danger btn-xs">Sil</a></td>
                       </tr>
 					  
 					<?php

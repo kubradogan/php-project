@@ -1,0 +1,15 @@
+Admin:
+Login
+User - CRUD
+Üye - CRUD 
+- Mesajlaşma
+- Satın alma, rezervasyon
+- 2 step Satın alma
+
+Search Item - CRUD
+Comments - CRUD
+Messages - CRUD
+Settings 
+FAQ
+Categories
+News - CRUD

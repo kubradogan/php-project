@@ -1,0 +1,5 @@
+Kullanici:
+
+Müşteri:
+Ürün:
+Kategori
